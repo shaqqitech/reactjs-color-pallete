@@ -43,9 +43,9 @@ const ColorPaletteApp = () => {
     <div className=' bg-gray-800 w-[100%] h-[100vh]'>
       <div className="container flex flex-wrap justify-center gap-8 p-4">
         {colors.map((color, index) => (
-          <div key={index} className="color border-2 rounded-xl flex flex-col justify-center items-center">
+          <div key={index} className="color border-2 rounded-xl flex flex-col justify-center items-center overflow-hidden ease-out">
             <div
-              className="hex-box w-32 h-32 rounded-lg cursor-pointer border-2"
+              className='hex-box w-32 h-32 rounded-lg cursor-pointer border-2 hover:scale-105'
               style={{ background: color }}
               onClick={() => copyColor(color)}
             ></div>
